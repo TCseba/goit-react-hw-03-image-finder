@@ -4,7 +4,6 @@ import ImageGallery from './ImageGallery/ImageGallery';
 
 export const App = () => {
   const [query, setQuery] = useState('');
-
   const handleSearchSubmit = event => {
     event.preventDefault();
     const form = event.currentTarget;
@@ -13,7 +12,7 @@ export const App = () => {
       setQuery(searchQuery);
     }
   };
-
+//now we can use the Searchbar and ImageGallery components in the App component
   return (
     <div
       style={{
